@@ -1,0 +1,31 @@
+.campo {
+    position: relative;
+    width: 100%;
+}
+
+.campo .entrada-primaria{
+    transition: 400ms;
+}
+
+.campo .entrada-primaria::placeholder {
+    font-size: 0.75rem;
+    color: var(--cinza-medio);
+}
+
+.campo__label{
+    display: none;
+    font-size: 0.75rem;
+    color: var(--cinza-medio);
+    position: absolute;
+    left: 1rem;
+    top: 0;
+}
+
+.campo .entrada:not(:placeholder-shown){
+    padding-top: 2rem;
+}
+
+.campo .entrada:not(:placeholder-shown) + .campo__label{
+    display: inline;
+    top: 1rem;
+}

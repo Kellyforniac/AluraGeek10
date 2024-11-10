@@ -1,0 +1,33 @@
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.cabecalho__logo {
+    width: 6.25rem;
+}
+
+.cabecalho__botao-pesquisa {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.cabecalho__input-pesquisa {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .cabecalho__botao-pesquisa {
+        display: none;
+    }
+
+    .cabecalho__input-pesquisa {
+        display: block;
+    }
+}
